@@ -270,9 +270,11 @@ p {
 .item-icons {
   width: 270px;
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   background: #f5f4fa;
-  padding: 25px 100px;
   margin-bottom: 30px;
 }
 
@@ -374,7 +376,7 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: var(--main-text);
+  color: #afb1b8;
 }
 
 .team-icons {
@@ -400,7 +402,6 @@ p {
 .customers-list {
   display: flex;
   gap: 30px;
-  justify-content: center;
 }
 
 .costomers-link {
@@ -411,7 +412,7 @@ p {
   border: 1px solid #afb1b8;
   align-items: center;
   justify-content: center;
-  color: var(--main-text);
+  color: #afb1b8;
 }
 .costomers-link:hover,
 .costomers-link:focus {
@@ -438,7 +439,7 @@ p {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  gap: 70px;
+  align-items: baseline;
 }
 
 .contacts-map {
@@ -467,10 +468,6 @@ p {
   background-color: var(--brand-color);
 }
 
-.social-network {
-  margin-top: 12px;
-}
-
 .social-network-title {
   margin-bottom: 20px;
   color: #fff;
@@ -478,6 +475,9 @@ p {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+.address-group {
+  margin-right: 70px;
 }
 
 /* portfolio */
@@ -512,6 +512,7 @@ p {
 }
 
 .filter-btn {
+  border: none;
   padding: 6px 22px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -528,10 +529,12 @@ p {
 .filter-btn:focus,
 .filter-btn:active {
   color: #fff;
-
   background: #2196f3;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.portfolio-link {
+  display: block;
 }
 
 .portfolio-link .imges {
@@ -545,8 +548,8 @@ p {
   margin-bottom: 30px;
 }
 
-.portfolio-list .item:hover,
-.portfolio-list .item:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   border: 1px solid #eee;
   background: #fff;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
@@ -561,7 +564,7 @@ p {
   margin-bottom: 0;
 }
 
-.porfolio-title {
+.portfolio-title {
   margin-bottom: 4px;
   color: var(--color-title);
   font-size: 18px;
@@ -570,7 +573,7 @@ p {
   letter-spacing: 1.08px;
 }
 
-.porfolio-text {
+.portfolio-text {
   color: var(--main-text);
   font-size: 16px;
   font-weight: 400;
@@ -578,7 +581,7 @@ p {
   letter-spacing: 0.48px;
 }
 
-.porfolio-description {
+.portfolio-description {
   padding: 20px 24px;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
